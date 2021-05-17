@@ -1,131 +1,56 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Data Structures</title>
-    </head>
-    <body>
-        <center>
-        <p>
-            How to declare the array?
-            <h4 id="declaration_of_array"></h4>
-        </p>
-        <hr>
-        <p>
-           Accessing first element
-            <h4 id="first_element"></h4>
-        </p>
-        <hr>
-        <p>
-            Accessing second element
-            <h4 id="second_element"></h4>
-        </p>
-        <hr>
-        <p>
-           Accessing the third element
-            <h4 id="third_element"></h4>
-        </p>
-        <hr>
-        <p>
-            How to get length of the array?
-            <h4 id="length_of_array"></h4>
-        </p>
-        <hr>
-        <p>
-            How to loop the array?
-            <h4 id="loop_of_array"></h4>
-        </p>
-        <hr>
-        <p>
-            How to add element at the end of the array?
-            <h4 id="end"></h4>
-        </p>
-        <hr>
-        <p>
-            How to add one more element at the end of the  array?
-            <h4 id="end1"></h4>
-        </p>
-        <hr>
-        <p>
-            How to declare the arrays with alphabets?
-            <h4 id="declaration_of_array_alpha"></h4>
-        </p>
-        <hr>
-        <p>
-            How to sort the array?
-            <h4 id="sort_of_array"></h4>
-        </p>
-        <hr>
-        <p>
-            How to reverse the array?
-            <h4 id="reverse_of_array"></h4>
-        </p>
-        <hr>
-        <p>
-            How to declare the arrays with numbers?
-            <h4 id="declaration_of_array_num"></h4>
-        </p>
-        <hr>
-        <p>
-            How to find maximum number from the array?
-            <h4 id="max_of_array"></h4>
-        </p>
-        <hr>
-        <p>
-            How to find minimum number from the array?
-            <h4 id="min_of_array"></h4>
-        </p>
-        <hr>
-        <script>
-            var fruits=["Apple", "Orange", "Mango"];
-            document.getElementById("declaration_of_array").innerHTML=fruits;
+<head>
+	<title>C80</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="main.js"></script>
 
-            var first_fruits=fruits[0];
-            document.getElementById("first_element").innerHTML=first_fruits;
+</head>
+<body>
+<center>
+<h3 style="margin-top: 20px; margin-bottom: 20px; ">
+	List of the students in my class
+</h3>
 
-            var fruits_two= fruits[1];
-            document.getElementById("second_element").innerHTML=fruits_two;
+<div id="rows">
+<span>1</span>
+<input type="text" placeholder="Name of the Student" id="name_of_the_student_1">
+<br>
 
-            var fruits_three=fruits[2];
-            document.getElementById("third_element").innerHTML=fruits_three;
+<span>2</span>
+<input type="text" placeholder="Name of the Student" id="name_of_the_student_2">
+<br>
 
-            var length_fruits=fruits.length;
-            document.getElementById("length_of_array").innerHTML=length_fruits;
+<span>3</span>
+<input type="text" placeholder="Name of the Student" id="name_of_the_student_3">
+<br>
 
-            var array_value = " ";
-            for (i=0; i < fruits.length; i++){
-                array_value= array_value + fruits[i] + "<br>";
-                document.getElementById("loop_of_array").innerHTML= array_value;
-            }
-           
+<span>4</span>
+<input type="text" placeholder="Name of the Student" id="name_of_the_student_4">
+</div>
 
-            fruits.push("Lemon");
-            document.getElementById("end").innerHTML=fruits;
+<button onclick="submit()" id="submit_button">
+	Submit
+</button>
 
-            fruits.push("Cherry");
-            document.getElementById("end1").innerHTML=fruits;
+<div id="display_name_with_commas">
+</div>
 
-            var alpha=["l", "m", "n", "w" , "k", "t"];
-            document.getElementById("declaration_of_array_alpha").innerHTML=alpha;
+<hr>
 
-           alpha.sort();
-            document.getElementById("sort_of_array").innerHTML=alpha;
-
-            alpha.reverse();
-            document.getElementById("reverse_of_array").innerHTML=alpha;
-
-            var num=["2", "76", "1", "102", "5"];
-            document.getElementById("declaration_of_array_num").innerHTML=num;
-
-            var max_num=Math.max.apply(Math,num);
-            document.getElementById("max_of_array").innerHTML=max_num;
-
-            var min_num=Math.min.apply(Math,num);
-            document.getElementById("min_of_array").innerHTML=min_num;
+<div id="display_name_without_commas">
+</div>
 
 
-       
+<button onclick="sorting()" id="sort_button">
+	Sort
+</button>
+<button onclick="update()" id="update_button">
+	Update
+</button>
 
-        </script>
-        </center>
-    </body>
+</center>
 
+</script>
+</body>
 </html>
