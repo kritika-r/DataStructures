@@ -1,50 +1,25 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title> Guest List </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="code.js"></script>
-    </head>
-    <body>
-        <h1> Guest List </h1>
-        <hr>
-        <div class="add_name">
-            <span>
-                <input placeholder="Type a name here..." id="add_input">
+<head>
 
-            </span>
-            <button onclick="add()" id="add_button"> Add</button>
-            <div id="display_added">
+<title>C81</title>
+<link rel="stylesheet" type="text/css" href="C81style.css">
+</head>
+<body class="body_backgorund">
 
-            </div>
-        </div>
-        <br>
-        <hr>
-        <div id="show_added">
-            <div id="show_added_names">
-                
-            </div>
-            <button onclick="show()" id="show_button"> Show</button>
-        </div>
-        <hr>
-        <div id="sort_added">
-            <div id="sort_names">
+<center>
+	<h1>My First Canvas</h1>
+	<canvas id="myCanvas" width= "800" height= "500">
 
-            </div>
-            <button onclick="sort()" id="sort_button"> Sort </button>
-        </div>
-        <hr>
-        <div id="search_names">
-            <span>
-                 <input placeholder="Type the name here..." id="search_input">
+	</canvas>
+	<br>
+	<span>Colour: </span> 
+	<input placeholder= "Enter the colour here..." type= "text" id="colour_input">
+	<br>
+	<button id="clear_button" onclick="clearCanvas();"> Clear </button>
+</center>
 
-                </span>
-                <button onclick="search()" id="search_button"> Search</button>
-                <h3> Name found:</h3>
-            <div id="search_results">
-                    
-                    
-                </div>
-        </div>
-        <hr>
-    </body>
+
+<script src="C81main.js"></script>
+</body>
 </html>
