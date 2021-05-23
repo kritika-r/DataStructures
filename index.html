@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+body{
+	background-image: url("mars.gif");
+    background-position: center;
+    background-size: cover;
+	
+}
+#myCanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
 
-<title>C81</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+h1,h4
+{
+	color: white !important;
+}
+</style>		
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Moving Rover On</title>
 </head>
-<body class="body_backgorund">
-
+<body onload="add();">
 <center>
-	<h1 class="text-primary">My First Canvas</h1>
-	<canvas id="myCanvas" width= "800" height= "500">
+<h1>Moving Rover On Mars</h1>
+<canvas id="myCanvas" height="500" width="700">
 
-	</canvas>
-	<br>
-	<span>Colour: </span> 
-	<input placeholder= "Enter the colour here..." type= "text" id="colour_input">
-	<span>Width of line: </span>
-	<input placeholder="Enter the line width here..." type="text" id="width_input">
-	
-		
-	
+</canvas>
+<h4>
+	<b>NOTE : </b> IF ROVER IS NOT VISIBLE PRESS ANY ARROW KEY
+</h4>
+
 </center>
-
-
-<script src="main.js"></script>
+<script src="main.js">
+</script>
 </body>
 </html>
