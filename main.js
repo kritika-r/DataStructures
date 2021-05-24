@@ -1,13 +1,18 @@
 canvas= document.getElementById('myCanvas');
 ctx= canvas.getContext("2d");
 
+random_background_image=["nasa_image_1.jpeg","nasa_image_2.jpeg","nasa_image_3.jpeg","nasa_image_4.jpeg"]
+
 rover_width= 100;
 rover_height= 90;
+
+random_number= Math.floor(Math.random() *4);
 
 rover_x= 10;
 rover_y= 10;
 
-background_img= "mars.jpg";
+background_img= random_background_image[random_number];
+console.log("The background image is" +background_img);
 rover_img= "rover.png";
 
 function add(){
